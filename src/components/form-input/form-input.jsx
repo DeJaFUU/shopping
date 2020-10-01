@@ -4,7 +4,7 @@ import './form-input.styles.scss';
 
 const FormInput = ({ handleChange, label, ...otherProps}) => (
     <div className="group">
-        <input onchange={handleChange} className="form-input" {...otherProps} />
+        <input onChange={handleChange} className="form-input" {...otherProps} />
         {
             label ? 
             (<label className={`${otherProps.value.length ? 'shrink' : ''} form-input-label`}>
